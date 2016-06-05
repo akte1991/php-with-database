@@ -11,7 +11,7 @@ if(!$surname || !$name)
     exit;
 }
 
-connectToDatabase("localhost","root","pysio06","index.html");
+connectToDatabase("localhost","root","root","index.html");
 mysql_select_db("my_database");
 $do = "INSERT INTO osoby VALUES('$surname','$name')";
 $does = mysql_query($do);

@@ -1,7 +1,7 @@
 <?php
 include 'connectToDatabase.php';
 print("<h3>People saved into database</h3>");
-connectToDatabase("localhost","root","pysio06","index.html");
+connectToDatabase("localhost","root","root","index.html");
 mysql_select_db("my_database");
 $do = "SELECT * FROM osoby";
 $does = mysql_query($do);
